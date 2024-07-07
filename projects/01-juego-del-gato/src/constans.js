@@ -5,7 +5,7 @@ export const TURNS = {
 
 
 
-  //lógica de la programación para seleccionar el ganador
+  //lógica de la programación para seleccionar el ganadorr
 
 
 export const WINNER_COMBOS = [
