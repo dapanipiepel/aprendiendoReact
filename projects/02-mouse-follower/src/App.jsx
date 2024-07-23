@@ -4,6 +4,8 @@ const FollowMouse = () => {
   const [enabled, setEnabled] = useState(false);
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
+
+  //mover el puntero
   useEffect(() => {
     console.log("efecto", { enabled });
 
@@ -23,6 +25,12 @@ const FollowMouse = () => {
     };
   }, [enabled]);
 
+  //quitar el cursor
+  useEffect(() => {
+    document.body.style.cursor = enabled ? "none" : "auto";
+  })
+
+  
   return (
     <>
       <div
